@@ -18,7 +18,6 @@
     height: 50px;   
     width: 100%;
     max-width: auto;
-
 }
 #navibar_logo {
     background-color:white;
@@ -70,6 +69,7 @@
     align-items: center;
     margin-right: 0;
     width: 100%;
+    margin-right: 20px;
 }
 
 .navibar_links{
@@ -83,7 +83,7 @@
 }
 #btn{
     display: inline-block;
-
+    
 }
 .button {
     display: flex;
@@ -114,8 +114,7 @@
     margin-right: 20px;
     display: none;
 }
-/* ----------media query ------------*/
-
+/* ----------media query for menudropdown------------*/
 @media only screen and (max-width: 900px) {
     .menu-icon {
         display: block; 
@@ -126,35 +125,34 @@
     }
     .navibar_container ul{
         position: absolute;
-
         top: 70px;
         width: 100%;
         height: fit-content;
         display: block;
         overflow: hidden;
     }   
+    .menulist{
+        max-height: 0;
+    }
     .navibar_container ul li{
-
-        background-color:grey;
+        background-color:transparent;
         width: 100%;
         height: 50px;
         float: right;
         display: inline-block;
+        margin-right: 0;
     }
     .navibar_container ul li a{
         float: right;
         color:indigo;
     }
-    .navibar_container ul li:hover{
-        background:white;
-    }
 }
-
+/* /*h independent* */
 .header {
     font-size: 25px;
     height: 100px;
     width: 100%;
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
 }
@@ -187,16 +185,16 @@
     margin-bottom: 10px;
 }
 .footer-col-1{
-    width: 30%;
+    width: 28%;
     display: inline-block;
     margin-bottom: 10px;
 }
 .footer-col-2{
-    width: 30%;
+    width: 28%;
     display: inline-block;
 }
 .footer-col-3{
-    width: 30%;
+    width: 28%;
     display: inline-block;
 }
 .footer-col-1 ol{
