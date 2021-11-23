@@ -131,15 +131,13 @@
         display: block;
         overflow: hidden;
     }   
-    .menulist{
-        max-height: 0;
-    }
+
     .navibar_container ul li{
         background-color:transparent;
         width: 100%;
         height: 50px;
         float: right;
-        display: inline-block;
+    
         margin-right: 0;
     }
     .navibar_container ul li a{
@@ -160,7 +158,6 @@
 .list{ 
     height:500px
 }
-
 
 
 
