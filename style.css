@@ -18,7 +18,7 @@
     height: 50px;   
     width: 100%;
     max-width: auto;
-    padding: 0 10px 0 20px;
+
 }
 #navibar_logo {
     background-color:white;
@@ -32,7 +32,7 @@
     text-decoration: none;
     padding-top: 10px;
     font-size: 25px;
-    
+    margin-left: 20px;
 }
 
 .search_container {
@@ -68,7 +68,7 @@
 }
 .navibar_container ul li{
     align-items: center;
-    margin-right: 20px;
+    margin-right: 0;
     width: 100%;
 }
 
@@ -115,35 +115,41 @@
     display: none;
 }
 /* ----------media query ------------*/
+
 @media only screen and (max-width: 900px) {
     .menu-icon {
         display: block; 
         cursor: pointer;
     }
+    .menu-icon:hover{
+        background-color: azure;
+    }
     .navibar_container ul{
         position: absolute;
+
         top: 70px;
         width: 100%;
-        display: inline-block;
-    }
+        height: fit-content;
+        display: block;
+        overflow: hidden;
+    }   
     .navibar_container ul li{
-        background-color:transparent;
-        width: 50%;
+
+        background-color:grey;
+        width: 100%;
         height: 50px;
         float: right;
+        display: inline-block;
     }
     .navibar_container ul li a{
         float: right;
         color:indigo;
     }
     .navibar_container ul li:hover{
-        background: chartreuse;
-    }
-    .header{
-        width: 100%;
-        display: block;
+        background:white;
     }
 }
+
 .header {
     font-size: 25px;
     height: 100px;
@@ -152,8 +158,6 @@
     justify-content: center;
     align-items: center;
 }
-
-
 /* the body css*/
 .list{ 
     height:500px
