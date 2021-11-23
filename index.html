@@ -36,7 +36,18 @@
             <img src="images/menuicon.png" class="menu-icon" onclick="menutoggle()">
         </div>
     </div>
-    
+    <script>
+        var menulist = document.getElementById("menulist");
+        menulist.style.maxHeight = "0px";
+        function menutoggle() {
+        if (menulist.style.maxHeight == "0px") {
+            menulist.style.maxHeight = "200px";
+            }
+        else {
+            menulist.style.maxHeight = "0px";
+        }
+        }
+    </script>
     <!-- header of web -->
     <div class = "header">
         <h2>Trade With The Newest And Precise Information</h2>
