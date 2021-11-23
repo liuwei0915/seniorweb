@@ -10,7 +10,9 @@
         <!-- Load icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- Load external JavaScript -->
-    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="app.js">
+        
+    </script>
 </head>
 
 <body>
@@ -36,18 +38,7 @@
             <img src="images/menuicon.png" class="menu-icon" onclick="menutoggle()">
         </div>
     </div>
-    <script>
-        var menulist = document.getElementById("menulist");
-        menulist.style.maxHeight = "0px";
-        function menutoggle() {
-        if (menulist.style.maxHeight == "0px") {
-            menulist.style.maxHeight = "200px";
-            }
-        else {
-            menulist.style.maxHeight = "0px";
-        }
-        }
-    </script>
+
     <!-- header of web -->
     <div class = "header">
         <h2>Trade With The Newest And Precise Information</h2>
@@ -98,10 +89,25 @@
         <div class="last">
             <hr>
             <p>Our purpose Is to provide informations and recommendations for stockers to make MONEY!
-            </p>
+            </p>    
         </div>
         
     </div>
 </body>
 
+    <script>
+    var menulist = document.getElementById("menulist");
+
+function menutoggle() {
+    if (menulist.style.maxHeight == "0px") {
+        menulist.style.maxHeight = "200px";
+        
+    }
+    else {
+        menulist.style.maxHeight = "0px";
+    }
+    
+}
+
+</Script>
 </html>
