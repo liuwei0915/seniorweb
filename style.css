@@ -200,13 +200,40 @@
 .footer-col-2 ol{
     padding-top: 5px;
 }
-/* 
+
 .app-logo{
-    margin-top:20px;
+    align-items: center;
+    margin-top: 10px;
+    height: 30px;
+
 }
-.app-logo img{
-    width: 140 px;
-}*/
+.app-logo a{
+
+}
+.fa {
+    padding-top: 9px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.fa-facebook{
+    background: #3b5998;
+    color: white;
+}
+.fa-twitter {
+    background: #55acee;
+    color: white;
+}
+.fa-instagram {
+    background: white;
+    color: #e84393;
+}
+.app-logo a{
+    height: 30px;
+    width: 30px;
+
+}   
 .last{
     text-align: center;
     justify-content: center;
