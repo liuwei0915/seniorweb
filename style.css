@@ -2,8 +2,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0%;
+    padding-bottom: 0px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
 .navibar {
     background-color:gray;
     height: 70px;
@@ -38,7 +40,7 @@
     height: 35px; 
     position: relative;
     left: 2%;
-    display: flex;
+    display: fixed;
     top: 15%;
 }  
 .searchbar{
@@ -52,24 +54,28 @@
 .search_container button{
     display: inline-block;
     position: absolute;
-    float: right;
     height: 35px;
     width: 50px;
-    padding: 5px;
+    justify-content: center;
     background-color: orange;
     font-size: 20px;
+}
+.fa-search {
+    margin-top: -10px;
+    margin-left: 13px;
 }
 
 .navibar_container ul{
     display:flex;
     list-style: none;
     height: 50px;
+  
 }
 .navibar_container ul li{
     align-items: center;
     margin-right: 0;
-    width: 100%;
     margin-right: 20px;
+    width: 100%;
 }
 
 .navibar_links{
@@ -81,16 +87,13 @@
     text-decoration: none;
     height: 100%;
 }
-#btn{
-    display: inline-block;
-    
-}
+ 
+
 .button {
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    padding: 10px 30px;
     height: 100%;
     width: 110px;
     border: none;
@@ -115,7 +118,7 @@
     display: none;
 }
 /* ----------media query for menudropdown------------*/
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
     .menu-icon {
         display: block; 
         cursor: pointer;
@@ -124,33 +127,36 @@
         background-color: azure;
     }
     .navibar_container ul{
-        position: absolute;
+        position: fixed;
         top: 70px;
         width: 100%;
         height: fit-content;
         display: block;
         overflow: hidden;
     }   
-
     .navibar_container ul li{
-        background-color:transparent;
-        width: 100%;
+        background-color:cadetblue;
         height: 50px;
-        float: right;
-    
-        margin-right: 0;
+        transition: all .5s;
     }
     .navibar_container ul li a{
-        float: right;
+
         color:indigo;
     }
+    .navibar_links {
+        margin-left: 50%;
+    }
+    .button {
+        margin-left: 51.8%;
+    }
+
 }
-/* /*h independent* */
+ /*h independent */
 .header {
     font-size: 25px;
     height: 100px;
     width: 100%;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -158,10 +164,6 @@
 .list{ 
     height:500px
 }
-
-
-
-
 
 
 
@@ -177,43 +179,73 @@
     height: fit-content;
     width: 100%;
 }
-
 .footer h2 {
     margin-bottom: 10px;
 }
 .footer-col-1{
-    width: 28%;
+    width: 30%;
     display: inline-block;
-    margin-bottom: 10px;
+
 }
 .footer-col-2{
-    width: 28%;
-    display: inline-block;
-}
-.footer-col-3{
-    width: 28%;
+    width: 30%;
     display: inline-block;
 }
 .footer-col-1 ol{
-    padding-bottom: 5px;
+    padding-top: 5px;
 }
 .footer-col-2 ol{
     padding-top: 5px;
 }
-
-.app-logo{
-    align-items: center;
-    margin-top: 10px;
-    height: 30px;
+.footer_links{
+    color: white;
+    text-decoration: none;
+}
+.footer_links:hover {
+    color:blueviolet;
+    transition:all 0.3 ease;
+}
+.footer-col-3{
+    width: 30%;
+    display: inline-block;
+}
+.footer-col-3 h2 {
+    height: fit-content;
+    margin-bottom: 15px;
+    top: 50px;
+}
+.navilogo {
+    background-color:white;
+    background-size: 100%;
+    background-image: linear-gradient(to top, red 50%, #ffb199 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 25px;
+    justify-content: center;
+    
+}
+.footer-col-3 p {
+    height: 35px;
 
 }
+/* those is for the social media app css */
+.app-logo{
+    align-items: center;
+    padding-bottom: 40px;
+    height: 30px;
+}
+
 .fa {
     padding-top: 9px;
     text-decoration: none;
     text-align: center;
     border-radius: 50%;
+    margin-right: 15px;
 }
-
 .fa-facebook{
     background: #3b5998;
     color: white;

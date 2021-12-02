@@ -10,16 +10,16 @@
         <!-- Load icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- Load external JavaScript -->
-    <script type="text/javascript" src="app.js">
-        
-    </script>
+    <script type="text/javascript" src="app.js">  </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
 </head>
 
 <body>
     <!---Navigation Bar --->
     <div class="navibar">
         <div class="navibar_container">
-            <a href="#home" id="navibar_logo">Stocktrak.me</a>
+            <a href="#home" id="navibar_logo">stocktrak.me</a>
             <div class="search_container">
                 <form action="index.html" method="GET">
                     <input type="text" class="searchbar" placeholder="Search...">
@@ -41,13 +41,13 @@
 
     <!-- header of web -->
     <div class = "header">
-        <h2>Trade With The Newest And Precise Information</h2>
+        <h2>Trade With the Newest and the Most Precise Information</h2>
     </div>
 
-<!--------body of the web------->
-<div class="list">
-    <h2>list</h2>
-</div>
+    <!--------body of the web------->
+    <div class="list">
+        <h2>list</h2>
+    </div>
 
 
 
@@ -59,31 +59,29 @@
             <div class="footer-col-1">
                 <h2>Resouce</h2>
                 <ul>
-                    <ol>Q&A</ol>
-                    <ol>Helps</ol>
-                    <ol>News Subscription</ol>
-                    <ol>Copyright Policy</ol>
+                    <ol><a href="#" class="footer_links">Q&A</a></ol>
+                    <ol><a href="#" class="footer_links">Helps</a></ol>
+                    <ol><a href="#" class="footer_links">News Subscription</a></ol>
+                    <ol><a href="#" class="footer_links">Copyright policy</a></ol>
                 </ul>
             </div>
             <div class="footer-col-2">
                 <h2>Company</h2>
                 <ul>
-                    <ol>Contact Us</ol>
-                    <ol>Career</ol>
-                    <ol>Benefit</ol>
-                    <ol>Company Story</ol>
+                    <ol><a href="#" class="footer_links">Contact Us</a></ol>
+                    <ol><a href="#" class="footer_links">Career</a></ol>
+                    <ol><a href="#" class="footer_links">Benefits</a></ol>
+                    <ol><a href="#" class="footer_links">Company Introduction</a></ol>
                 </ul>
             </div>
-
             <div class="footer-col-3">
-                <h2 id="navibar_logo">KWMAR STOCK</h2>
+                <h2 class="navilogo">Stocktrak.me</h2>
                 <P>Copyright © 2021 stocktrakme inc. All rights reserved.</P>
-
                 <div class='app-logo'>
                     <a href="#" class="fa fa-facebook"></a>
                     <a href="#" class="fa fa-twitter"></a>
                     <a href="#" class="fa fa-instagram"></a>
-                </div>
+                </div> 
             </div>
         </div>
         </div>
@@ -98,7 +96,6 @@
 
 <script>
     var menulist = document.getElementById("menulist");
-
     function menutoggle() {
     if (menulist.style.maxHeight == "0px") {
         menulist.style.maxHeight = "200px";
@@ -107,7 +104,9 @@
     else {
         menulist.style.maxHeight = "0px";
     }
-    
+    // this is used for refresh the
+    window.onresize = function(){ location.reload(); }
 }
+
 </script>
 </html>
