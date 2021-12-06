@@ -117,6 +117,8 @@
     margin-right: 20px;
     display: none;
 }
+
+
 /* ----------media query for menudropdown------------*/
 @media only screen and (max-width: 1000px) {
     .menu-icon {
@@ -160,10 +162,22 @@
     justify-content: center;
     align-items: center;
 }
+
 /* the body css*/
-.list{ 
-    height:500px
+
+.box{
+    height: 500px;
+    width: 30%;
+    margin-left: 50px;
+    background: #ff0844;
 }
+.content{ 
+    height: 50px;
+
+}
+
+
+
 
 
 
@@ -232,6 +246,7 @@
     height: 35px;
 
 }
+
 /* those is for the social media app css */
 .app-logo{
     align-items: center;
