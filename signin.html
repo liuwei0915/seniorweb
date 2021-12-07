@@ -12,10 +12,7 @@
         <!-- Load external JavaScript -->
     <script type="text/javascript" src="app.js">  </script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <!-- google font 3 down below -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -42,20 +39,58 @@
         </div>
     </div>
 
-    <!-- header of web -->
-    <div class = "header">
-        <h2>Trade With the Newest and the Most Precise Information</h2>
-    </div>
 
-    <!--------body of the web------->
-
-    <!--Raman-->
-    <div class="box">
-        <div class="content">
-            <h3>Top 10 Recommendation</h3>
+<!--------body of the web which is signup and sign in page------->
+<div class="sign-page">
+    <div class="main">
+       <form class="form" id="login">
+           <h1 class="form-title">Sign In</h1>
+           <div class="form-message form-message-error"></div>
+           <div class="form-input-group">
+               <input type="text" class="form-input" autofocus placeholder="Username or Email">
+               <div class="form-input-errormessage"></div>
+           </div>
+           <div class="form-input-group">
+            <input type="password" class="form-input" autofocus placeholder="password">
+            <div class="form-input-errormessage"></div>
         </div>
-    </div>
- 
+        <button class="form-button" type="submit">Continue</button>
+        <p class="form-text">
+            <a href="./" class="form-link">Forgot your password?</a>
+        </p>
+        <p class="form-text">
+            <a class="form-link" id="linksignup">Don't have acocount? Create account!</a>
+        </p>
+       </form>
+
+
+        <form class="form form-hidden" id="signup">
+            <h1 class="form-title">Sign Up</h1>
+            <div class="form-message form-message-error"></div>
+            <div class="form-input-group">
+                <input type="text" id="signupusername" class="form-input" autofocus placeholder="Username">
+                <div class="form-input-errormessage"></div>
+            </div>
+            <div class="form-input-group">
+                <input type="text" class="form-input" autofocus placeholder="Email Address">
+                <div class="form-input-errormessage"></div>
+            </div>
+            <div class="form-input-group">
+             <input type="password" class="form-input" autofocus placeholder="password">
+             <div class="form-input-errormessage"></div>
+            </div>
+            <div class="form-input-group">
+                <input type="password" class="form-input" autofocus placeholder="Confirm Password">
+                <div class="form-input-errormessage"></div>
+               </div>
+         <button class="form-button" type="submit">Continue</button>
+        
+         <p class="form-text">
+             <a class="form-link" id="linklogin">Already have an account? Sign in</a>
+         </p>
+        </form>
+     </div>
+</div>
 
 
 <!-----the footer of website------>
