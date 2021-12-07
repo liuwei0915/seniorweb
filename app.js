@@ -11,11 +11,12 @@ function setformmessage(formElement, type, message){
 function setinputerror(inputElement, message) {
     inputElement.classList.add ("form-input-error");
 
-    inputElement.ParentElement.querySelector(".form-input-errormessage").textContent = message;
+    inputElement.parentElement.querySelector(".form-input-errormessage").textContent = message;
 
 }
 function clearinputerror(inputElement) {
-    inputElement.classList.remove("from-input-error")
+    inputElement.classList.remove("from-input-error");
+    inputElement.parentElement.querySelector(".form-input-errormessage").textContent = "";
 }
 
 // show meessage
