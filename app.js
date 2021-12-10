@@ -53,3 +53,8 @@ document.addEventListener("DOMContentLoaded", () => {
         })
     })
 })
+
+const api_url = 'https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=IBM&interval=5min&apikey=demo';
+fetch(api_url)
+.then(res => res.json())
+.then(data => console.log(data))
