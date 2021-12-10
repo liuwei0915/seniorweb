@@ -1,6 +1,6 @@
-// this is for the sign in & sign up page
-
+// this is for the sign in & sign up page from 1-55
 // this part the error for sign in page
+
 function setformmessage(formElement, type, message){
     const messageElement = formElement.querySelector(".form-message")
     messageElement.textContent = message;
@@ -41,9 +41,6 @@ document.addEventListener("DOMContentLoaded", () => {
         setformmessage(loginform, "error", "Invalid username or password")
     })
 
-
-
-
     // sign up error this part is not working
     document.querySelectorAll(".form-input").forEach(inputElement => {
         inputElement.addEventListener("blur", e => {
@@ -55,5 +52,4 @@ document.addEventListener("DOMContentLoaded", () => {
             clearinputerror(inputElement);
         })
     })
-});
-
+})

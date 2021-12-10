@@ -156,8 +156,8 @@ for footer line 194 195  and 222*/
     .button {
         margin-left: 51.8%;
     }
-
 }
+
  /*h independent */
 .header {
     font-size: 25px;
@@ -167,6 +167,43 @@ for footer line 194 195  and 222*/
     justify-content: center;
     align-items: center;
 }
+
+/* the ticker banner  */
+.tcontainer {
+    width: 100%;
+    overflow: hidden;
+}
+
+.ticker-wrap {
+    width: 100%;
+    padding-left: 100%;
+    background-color: #eee;
+}
+
+@keyframes ticker {
+    100% {
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+.ticker-move {
+    display: inline-block;
+    white-space: nowrap;
+    padding-right: 100%;
+    animation-timing-function: linear;
+    animation: ticker 40s infinite;
+}
+
+.ticker-move:hover {
+    animation-play-state: paused;
+}
+
+.ticker-item {
+    display: inline-block;
+    padding: 0 200px;
+    font-size: 20px;
+}
+
 
 /* the body css*/
 
