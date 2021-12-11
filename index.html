@@ -59,7 +59,7 @@
     </div>
     <!--------body of the web------->
     <h2>this is data</h2>
-    <div class="data" id="data">
+    <div class="box" id="data">
     
     </div>
 
@@ -105,4 +105,19 @@
         
     </div>
 </body>
+<script>
+    var menulist = document.getElementById("menulist");
+    function menutoggle() {
+    if (menulist.style.maxHeight == "0px") {
+        menulist.style.maxHeight = "200px";
+        
+    }
+    else {
+        menulist.style.maxHeight = "0px";
+    }
+    // this is used for refresh the
+    window.onresize = function(){ location.reload(); }
+}
+
+</script>
 </html>
