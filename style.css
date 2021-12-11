@@ -169,41 +169,6 @@ for footer line 194 195  and 222*/
 }
 
 /* the ticker banner  */
-.tcontainer {
-    width: 100%;
-    overflow: hidden;
-}
-
-.ticker-wrap {
-    width: 100%;
-    padding-left: 100%;
-    background-color: #eee;
-}
-
-@keyframes ticker {
-    100% {
-        transform: translate3d(-100%, 0, 0);
-    }
-}
-
-.ticker-move {
-    display: inline-block;
-    white-space: nowrap;
-    padding-right: 100%;
-    animation-timing-function: linear;
-    animation: ticker 40s infinite;
-}
-
-.ticker-move:hover {
-    animation-play-state: paused;
-}
-
-.ticker-item {
-    display: inline-block;
-    padding: 0 200px;
-    font-size: 20px;
-}
-
 
 /* the body css*/
 
@@ -442,4 +407,39 @@ form > *:last-child{
 }
 .form-link:hover{
     text-decoration: underline;
+}
+.BodyQA {
+    height: 400px;
+    margin-top: 20px;
+    margin-left: 50px;
+    
+}
+.Bodyhelps-body {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.paypallinks {
+    margin-left: 45%;
+}
+.Bodysub-body {
+    margin-top: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+}
+.Bodyprivacy{
+    padding-top: 50px;
+}
+.Bodyprivacy-body {
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: left;   
+    height: 500px;
 }
